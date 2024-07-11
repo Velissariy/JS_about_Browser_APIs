@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="./css/style.css">
+  <script src="script.js" defer></script>
+  <title>Случайная фотография</title>
+</head>
+<body>
+<div class="container">
+  <div class="random-photo" data-id="">
+    <img class="random-photo__img" src="./img/empty.png" alt="">
+    <div class="random-photo__info">
+      <p class="random-photo__photographer">&nbsp;</p>
+      <p class="random-photo__description"></p>
+      <div class="random-photo__buttons">
+        <button class="random-photo__like-btn" disabled>Like</button>
+        <button class="random-photo__next-btn">Next random</button>
+      </div>
+      <span class="random-photo__likes">0</span>
+    </div>
+  </div>
+  <template class="liked-photo__template">
+    <div class="liked-photo" data-id="">
+      <img class="liked-photo__image" src="" alt="">
+      <p class="liked-photo__photographer"></p>
+      <p class="liked-photo__description"></p>
+    </div>
+  </template>
+  <div class="liked-photos">
+    <div class="liked-photos__container">
+    </div>
+    <div class="liked-photos__navigation">
+      <button class="liked-photos__prev-button" disabled>Prev</button>
+      <span class="liked-photos__page"></span>
+      <span> - </span>
+      <span class="liked-photos__allPages"></span>
+      <button class="liked-photos__next-button" disabled>Next</button>
+    </div>
+  </div>
+</div>
+<div id="modal" class="modal" data-id="">
+  <div class="modal__content">
+    <img class="modal__img" src="" alt="">
+    <p class="modal__photographer"></p>
+    <p class="modal__description"></p>
+    <button class="modal__unlike-btn">UnLike</button>
+  </div>
+</div>
+</body>
+</html>
